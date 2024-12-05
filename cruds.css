@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #3b3b3bee;
+    font-family: "Cairo", sans-serif;
+
+}
+
+.container {  
+    max-width: 1170px;
+    width: 90%;   
+    margin: 0 auto; 
+    padding-left: 15px;  
+    padding-right: 15px;  
+}  
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.crude{
+    margin: auto;
+    color: #fff;
+    
+}
+
+.crude .title{
+text-align: center;
+text-transform: uppercase;
+margin: 10px 0;
+}
+
+input{
+    color: #fff;
+    background: #2e2e2e;
+    border: none;
+    outline: none;
+    padding-left: 5px ;
+    margin: 5px 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    transition: .3s;
+
+    font-size: 1rem;
+}
+
+input:focus{
+    background:#202020 ;
+    transform: scale(1.1);
+}
+
+
+.price input{
+    width: 20%;
+}
+.price input:last-child {  
+    margin-right: 0; 
+}  
+
+
+#total{
+    background: #940303;
+    padding: 7px 5px;
+    border-radius: 4px;
+    width: fit-content;
+    margin-left: 2px;
+    max-height: 41px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    background: #6d9b00;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #ffff;
+    padding: 5px 0;
+    border-radius: 200px;
+    transition: .3s;
+}
+
+button:hover{
+    background: #81b803;
+    letter-spacing: 1px;
+}
+
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button{
+    width: 45%;
+}
+#deleteAll{
+    margin: 20px 0;
+}
+
+
+table {  
+    width: 100%;  
+    margin: 10px 0;  
+    text-align: center;  
+    border-collapse: collapse; 
+    table-layout: auto;   
+}  
+
+th{
+    text-transform: uppercase;
+}
+
+th, td {  
+    padding: 5px;  
+    word-wrap: break-word; 
+    max-width: 120px; 
+    overflow: hidden; 
+    text-overflow: ellipsis;  
+}  
+
+
+@media (max-width: 768px) {  
+
+    .crude{
+        width: 80%;
+    }
+
+    .price input{
+        width: 100%;
+    } 
+
+    #total{
+        margin: 5px 0;
+       display: block;
+       padding-right: 0;
+       
+    }
+    .btnsearch button {  
+        width: 100%; 
+        margin-bottom: 5px;  
+    }  
+
+    .btnsearch{
+        flex-direction:column;
+    }
+    button{
+        margin: 10px 0;
+    }
+    #total{
+        width: 100%;
+    }
+   
+
+    table {  
+        display: block; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+    } 
+
+    input:focus{
+        transform: scale(1);
+        touch-action: manipulation;
+
+    }
+
+   
+    
+    
+}  
